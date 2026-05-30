@@ -1,0 +1,16 @@
+[Unit]
+Description=Tremba Telegram Bot
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/opt/tremba_bot
+ExecStart=/opt/tremba_bot/venv/bin/python bot.py
+Restart=always
+RestartSec=10
+Environment=TELEGRAM_TOKEN=YOUR_BOT_TOKEN
+Environment=GEMINI_API_KEY=YOUR_GEMINI_KEY
+
+[Install]
+WantedBy=multi-user.target
