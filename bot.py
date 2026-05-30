@@ -466,7 +466,7 @@ def is_prompt_injection(text: str) -> bool:
 
 def contains_trigger(text: str) -> bool:
     text_lower = text.lower()
-    triggers = ["фєліп", "філіп", "tremba", "тремба", "трембіч", "трємба"]
+    triggers = ["фєліп", "філіп"]
     return any(t in text_lower for t in triggers)
 
 
