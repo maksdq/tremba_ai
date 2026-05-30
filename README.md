@@ -31,7 +31,7 @@ Telegram і Twitch бот який спілкується в стилі укра
 ## Встановлення
 
 ```bash
-git clone https://github.com/yourname/tremba_ai
+git clone https://github.com/maksdq/tremba_ai
 cd tremba_ai
 pip install python-telegram-bot aiohttp
 ```
